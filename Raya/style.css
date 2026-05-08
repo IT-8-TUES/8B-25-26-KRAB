@@ -61,7 +61,6 @@ span.nav-headers {
 }
 
 /* Memories page */
-/*memories-page-info*/
 .memories-container {
     display: flex;
     flex-direction: column;
@@ -115,7 +114,6 @@ span.memories-archive {
     padding-top: 3px;
 }
 
-/* memories-page-cards */
 .memory-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
