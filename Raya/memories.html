@@ -5,20 +5,96 @@
     <meta charset="UTF-8">
     <title>Organization</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=lightbulb_2" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <header>
-        <h1 class="header"> Together </h1>
+        <h1 class="header"> Organization </h1>
         <nav class="header-nav">
-            <a href="index.html" class="active">Home</a>
-            <a href="ideas.html">Ideas</a>
-            <a href="memories.html" class="active">Memories</a>
-            <a href="profile.html">Profile</a>
+            <a href="../Boris/index.html">
+                <span class="material-symbols-rounded">groups</span>
+                <span class="nav-headers"> Hangouts </span>
+            </a>
+            <a href="../Anna-Maria/ideas.html">
+                <span class="material-symbols-rounded">lightbulb_2</span>
+                <span class="nav-headers"> Ideas </span>
+            </a>
+            <a href="memories.html" class="active">
+                <span class="material-symbols-rounded">photo_camera</span>
+                <span class="nav-headers"> Memories </span>
+            </a>
+            <a href="../Katrin/profile.html">
+                <span class="material-symbols-rounded">person</span>
+                <span class="nav-headers"> Profile </span>
+            </a>
         </nav>
     </header>
     <main>
-        <p> bar soup </p>
+        <section class="memory-info">
+            <div>
+                <a class="memories-archive">
+                    <span class="material-symbols-rounded memories-icon">photo_camera</span>
+                    <span class="memories-archive"> Archive </span>
+                </a>
+                <div class="memories-container">
+                    <h2 class="memories-heading"> Memories</h2>
+                    <p class="memories-description"> <i> Every plan that actually happened </i></p>
+                </div>
+            </div>
+            <button> + Add memory </button>
+        </section>
+        <section class="memory-cards">
+            <div class="memory-card">
+                <div class="card-top beach">🏖️</div>
+                <div class="card-bottom">
+                    <p class="memory-date"> Jul 2024 </p>
+                    <p class="memory-location"> Biarritz '24 </p>
+                    <div class="list-uchastnici">
+                        <p> with Maya </p>
+                        <ul>
+                            <li> Leo </li>
+                            <li> Ines </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <div class="card-top roma"> 🍝 </div>
+                <div class="card-bottom">
+                    <p class="memory-date"> Oct 2023 </p>
+                    <p class="memory-location"> Roma weekend</p>
+                    <div class="list-uchastnici">
+                        <p> with Niya </p>
+                        <ul>
+                            <li> Alex </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="memory-card">
+                <div class="card-top ski">⛷️</div>
+                <div class="card-bottom">
+                    <p class="memory-date"> Feb 2024 </p>
+                    <p class="memory-location"> Chaomnix powder </p>
+                    <div class="list-uchastnici">
+                        <p> with Tom </p>
+                        <ul>
+                            <li> Ada </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
