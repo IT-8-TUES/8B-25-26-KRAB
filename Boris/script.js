@@ -59,4 +59,39 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    function addChatSubmitHandlers() {
+        const chatSections = document.querySelectorAll(".chat-section");
+
+        chatSections.forEach(section => {
+            const input = section.querySelector("input[type='text']");
+            const button = section.querySelector("button");
+            const inputContainer = section.querySelector(".input-container");
+
+            if (!input || !button || !inputContainer) return;
+
+            function sendMessage() {
+                const text = input.value.trim();
+                if (!text) return;
+
+                const message = document.createElement("p");
+                message.classList.add("message", "sent");
+                message.textContent = text;
+
+                section.insertBefore(message, inputContainer);
+                input.value = "";
+                message.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            }
+
+            button.addEventListener("click", sendMessage);
+            input.addEventListener("keydown", event => {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    sendMessage();
+                }
+            });
+        });
+    }
+
+    addChatSubmitHandlers();
 });

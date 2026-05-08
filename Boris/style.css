@@ -30,3 +30,121 @@ nav.header-nav a {
     border-radius: 19px;
     font-weight: bold;
 }
+
+main{
+    display: flex;
+}
+
+#list {
+    background-color: #bcecb0;
+    width:25%;
+    height: 84vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    background-color: #dffad8;
+    margin: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top:1%;
+    padding-bottom:1%;
+    border-radius: 2rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#chat {
+    background-color: #e9f1e6;
+    width: 75%;
+    height: 84vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 2rem; 
+}
+
+.chat-section { 
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-top: 1px solid #9bad97;
+    gap: 0px; 
+    position: relative; 
+}
+
+.chat-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    align-self: center;
+    background-color: #e9f1e6;
+    padding: 0 1rem;
+    margin-top: -0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.message {
+    font-size: 1.2rem;
+    width: fit-content;
+    max-width: 70%;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    word-wrap: break-word;
+}
+
+.message.received {
+    align-self: flex-start;
+    background-color: #fefff3;
+    border: 1px solid #d3d3b0;
+    border-bottom-left-radius: 0;
+}
+
+.message.sent {
+    align-self: flex-end;
+    background-color: #d0f0ff;
+    border: 1px solid #9fcfe0;
+    border-bottom-right-radius: 0;
+}
+
+.input-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+#input{
+    flex: 1;
+    height: 40px;
+    border-radius: 1rem;
+    border: 1px solid #d9ffcf;
+    background-color: #fefff3;
+    padding: 0.2rem 1rem;
+}
+
+#send{ 
+    background-color: #beffad;
+    border: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#send:hover{
+    background-color: #afff9b;
+    transform: scale(1.05);
+}
+
+#send:active{
+    transform: scale(0.95);
+}
