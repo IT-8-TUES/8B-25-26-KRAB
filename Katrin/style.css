@@ -1,31 +1,32 @@
 .circle{
-    width: 200px;
-    height: 200px;
+    width: 13rem;
+    height: 13rem;
     background-color: #7dd0d3;
     border-radius:50%;
-    margin-left:30px;
-    margin-top:30px;
+    margin-left:3rem;
+    margin-top:3rem;
 }
 
 .circle-text{
     position:absolute;
-    margin-top:50px;
-    margin-left:45px;
+    margin-top:3rem;
+    margin-left:2.9rem;
     font-size: 5rem;
 }
 
 .circle1{
-    width:50px;
-    height:50px;
+    position:absolute;
+    width:3rem;
+    height:3rem;
     background-color: #54e893;
     border-radius:50%;
-    margin-left:175px;
-    margin-top:-60px;
+    margin-left:12.5rem;
+    margin-top:-3.5rem;
 }
 
 .hangout{
-    width:500px;
-    height:550px;
+    width:31rem;
+    height:30rem;
     margin-left:auto;
     margin-top:-12rem;
     margin-right:5rem;
@@ -45,35 +46,135 @@ p{
 .info-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top:-28rem;
+    gap: 1.2rem;
+    margin-top:-24rem;
 }
 
 .info{
-    width: 400px;
-    height: 55px;
+    width: 25rem;
+    height: 3.4rem;
     margin-left:auto;
     margin-right:9.5rem;
-    border-radius:15px;
+    border-radius:1rem;
     background-color:  rgb(207 242 218);
 }
 
 .name{
     margin-left:0.5rem;
+    margin-top:0.3rem;
     font-family: "Arial", Times, serif;
 }
 
 .place{
     margin-right:auto;
+    margin-left:0.5rem;
+    margin-top:0.2rem;
     font-family: "Arial", Times, serif;
 }
 
 h4{
     position:absolute;
     margin-left:72.5rem;
-    margin-top:-31rem;
+    margin-top:-27rem;
     font-family: "Times New Roman", Times, serif;
     font-size: 1.5rem;
+}
+
+.role{
+    color: rgb(53, 119, 62);
+    font-family: "Arial", Times, serif;
+    font-size: 1.2rem;
+    position:absolute;
+    margin-left:20rem;
+    margin-top:-28rem;
+}
+
+.imena{
+    position:absolute;
+    margin-left:20rem;
+    margin-top:-29rem;
+    font-size:2rem;
+}
+
+.wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 20rem;
+    margin-top: -21rem;
+}
+
+.time{
+    width:5rem;
+    height:3rem;
+    background-color: #edede7;
+    font-size:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.6rem;
+    border-radius: 1rem;
+    border:1px solid rgb(165, 197, 175);
+}
+
+.default{
+    position:absolute;
+    margin-left:2rem;
+    margin-top:5rem;
+    font-family: "Arial", Times, serif;
+    font-size: 1.2rem;
+    color: rgb(53, 119, 62);
+}
+
+.plan{
+    position:absolute;
+    margin-top:6rem;
+    margin-left:2rem;
+    font-family: "Arial", Times, serif;
+}
+
+.wrap{
+    position:absolute;
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-left: 2rem;
+    margin-top: -21rem;
+}
+
+.planning{
+    width:16.8rem;
+    height:2.5rem;
+    margin-top:30.5rem;
+    background-color:  rgb(207 242 218);
+    border-radius: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 0.8rem;
+}
+
+.wrap1{
+    position:absolute;
+    display:flex;
+    flex-direction: row;
+    gap: 1.8rem;
+    margin-left: 2rem;
+    margin-top: -21rem;
+
+}
+
+.planning1{
+    width:15.6rem;
+    margin-top:31.3rem;
+    border-radius: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 2.5rem;
+    font-size: 0.8rem;
 }
 
 body{
