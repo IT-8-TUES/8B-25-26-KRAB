@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Organization</title>
+    <link rel="stylesheet" href="friends.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=lightbulb_2" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+<div class="popup">
+       <h3>Add a friend</h3>
+       <div class="input-row">
+           <h2>@</h2>
+           <input id="Name" type="text" placeholder="Enter friend's name">
+
+       </div>
+
+       <p id="warning" class="warning"></p>
+       <div class="button-row">
+           <button onClick="closePopup()">Back</button>
+           <button onClick="sendFriendRequest()">Send friend request</button>
+       </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
