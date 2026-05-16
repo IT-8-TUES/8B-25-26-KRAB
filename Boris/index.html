@@ -40,43 +40,124 @@
     <main>
         <section id="list">
             <div class="item">
-                <h3 class="item-title">Hangout 67</h3>
-                <h4>Food: bring your own</h4>
-                <h4>Date: 6/7/6767</h4>
-                <h4>Location: Raya’s place</h4>
+                <div class="item-header">
+                    <h2 class="item-title">Hangout 67</h2>
+                </div>
+                <div class="chat-aspect"><h4 class="chat-aspect-text">🍕Food: bring your own</h4><span class="aspect-score">4/4</span></div>
+                <div class="chat-aspect"><h4 class="chat-aspect-text">📅Date: 6/7/6767</h4><span class="aspect-score">4/4</span></div>
+                <div class="chat-aspect"><h4 class="chat-aspect-text">📍Location: Raya's place</h4><span class="aspect-score">4/4</span></div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <h2 class="item-title">Hangout 67</h2>
+                </div>
+                <div class="chat-aspect"><h4 class="chat-aspect-text">🍕Food: bring your own</h4><span class="aspect-score">4/4</span></div>
+                <div class="chat-aspect"><h4 class="chat-aspect-text">📅Date: 6/7/6767</h4><span class="aspect-score">4/4</span></div>
+                <div class="chat-aspect"><h4 class="chat-aspect-text">📍Location: Raya's place</h4><span class="aspect-score">4/4</span></div>
             </div>
         </section>
         <section id="chat">
-            <div class="chat-section">
-                <h2 class="chat-title">Food</h2>
-                <p class="message sent">Raya sopa</p>
-                <p class="message received">Hi! I was just checking the plan for Hangout 67. Are we still meeting tomorrow?</p>
-                <p class="message sent">Yes, I’ll be there. I can bring snacks and drinks.</p>
-                <div class="input-container">
-                    <input type="text" id="input" placeholder="Enter a message...">
-                    <button id="send">Send</button>
+            <div class="summary-section">
+                <div class="summary-header">
+                    <div class="summary-labels">
+                        <p class="summary-intro">RAYA WAS THINKING ABOUT</p>
+                        <h2 class="summary-title">Beach weekend in Biarritz 🏖️</h2>
+                    </div>
+                    <span class="summary-badge">0/4 all-in</span>
+                </div>
+                <div class="summary">
+                    <div class="aspect">
+                        <div class="aspect-icon place-icon">📍</div>
+                        <div class="aspect-content">
+                            <p class="aspect-key">PLACE</p>
+                            <p class="aspect-value">Biarritz</p>
+                        </div>
+                        <div class="aspect-actions">
+                            <span class="aspect-score">0/4</span>
+                            <button class="aspect-btn agree-btn">✓</button>
+                            <button class="aspect-btn disagree-btn">✕</button>
+                        </div>
+                    </div>
+                    <div class="aspect">
+                        <div class="aspect-icon date-icon">📅</div>
+                        <div class="aspect-content">
+                            <p class="aspect-key">DATE</p>
+                            <p class="aspect-value">Jul 12 – Jul 14</p>
+                        </div>
+                        <div class="aspect-actions">
+                            <span class="aspect-score">0/4</span>
+                            <button class="aspect-btn agree-btn">✓</button>
+                            <button class="aspect-btn disagree-btn">✕</button>
+                        </div>
+                    </div>
+                    <div class="aspect">
+                        <div class="aspect-icon budget-icon">💵</div>
+                        <div class="aspect-content">
+                            <p class="aspect-key">BUDGET</p>
+                            <p class="aspect-value">≤ €180 / person</p>
+                        </div>
+                        <div class="aspect-actions">
+                            <span class="aspect-score">0/4</span>
+                            <button class="aspect-btn agree-btn">✓</button>
+                            <button class="aspect-btn disagree-btn">✕</button>
+                        </div>
+                    </div>
+                    <div class="aspect">
+                        <div class="aspect-icon activity-icon">🎲</div>
+                        <div class="aspect-content">
+                            <p class="aspect-key">ACTIVITY</p>
+                            <p class="aspect-value">Surf lessons + sunset picnic</p>
+                        </div>
+                        <div class="aspect-actions">
+                            <span class="aspect-score">0/4</span>
+                            <button class="aspect-btn agree-btn">✓</button>
+                            <button class="aspect-btn disagree-btn">✕</button>
+                        </div>
+                    </div>
+                    <div class="aspect">
+                        <div class="aspect-icon transport-icon">🚂</div>
+                        <div class="aspect-content">
+                            <p class="aspect-key">TRANSPORT</p>
+                            <p class="aspect-value">Train from Bordeaux</p>
+                        </div>
+                        <div class="aspect-actions">
+                            <span class="aspect-score">0/4</span>
+                            <button class="aspect-btn agree-btn">✓</button>
+                            <button class="aspect-btn disagree-btn">✕</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-footer">
+                    <button class="add-aspect">+ Add aspect</button>
+                    <button class="agree-all-btn">✓ Agree with all</button>
                 </div>
             </div>
-            <div class="chat-section">
-                <h2 class="chat-title">Date</h2>
-                <p class="message sent">Raya sopa</p>
-                <p class="message received">Wanna meet yesturday</p>
-                <p class="message sent">Nah imma do my own stuff.</p>
-                <div class="input-container">
-                    <input type="text" id="input" placeholder="Enter a message...">
-                    <button id="send">Send</button>
+            <div id="aspectModal" class="modal-overlay">
+                <div class="modal-content">
+                    <h3 class="modal-title">Add a new aspect</h3>
+                    
+                    <div class="modal-field">
+                        <label for="aspectSelect">Select Aspect</label>
+                        <select id="aspectSelect"></select>
+                    </div>
+
+                    <div class="modal-field" id="customAspectField" style="display: none;">
+                        <label for="customAspectName">Custom Aspect Name</label>
+                        <input type="text" id="customAspectName" placeholder="e.g., MUSIC">
+                    </div>
+
+                    <div class="modal-field">
+                        <label for="aspectValue">Value</label>
+                        <input type="text" id="aspectValue" placeholder="e.g., Details goes here...">
+                    </div>
+
+                    <div class="modal-actions">
+                        <button id="cancelAspectBtn" class="cancel-btn">Cancel</button>
+                        <button id="submitAspectBtn" class="submit-btn">Add aspect</button>
+                    </div>
                 </div>
             </div>
-            <div class="chat-section">
-                <h2 class="chat-title">Location</h2>
-                <p class="message sent">Raya sopa</p>
-                <p class="message received">I wanna eat rayas food so at its place</p>
-                <p class="message sent">Yooo same same .</p>
-                 <div class="input-container">
-                    <input type="text" id="input" placeholder="Enter a message...">
-                    <button id="send">Send</button>
-                </div>
-            </div>
+            <div class="chat-sections"></div>
         </section>
     </main>
     <script src="script.js"></script>
