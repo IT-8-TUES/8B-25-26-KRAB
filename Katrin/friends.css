@@ -45,6 +45,14 @@ button{
     min-height: 0.5rem;
 }
 
+.success{
+    color: #2b7a3d;
+    font-size: 1rem;
+    display:flex;
+    justify-content: center;
+    min-height: 0.5rem;
+}
+
 body{
     display:flex;
     flex-direction: column;

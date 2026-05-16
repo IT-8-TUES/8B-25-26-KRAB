@@ -19,17 +19,22 @@
        <h3>Add a friend</h3>
        <div class="input-row">
            <h2>@</h2>
-           <input id="Name" type="text" placeholder="Enter friend's name">
+           <input id="Name" type="text" placeholder="Enter friend's name" autocomplete="off">
 
        </div>
 
        <p id="warning" class="warning"></p>
+       <p id="success" class="success"></p>
        <div class="button-row">
            <button onClick="closePopup()">Back</button>
-           <button onClick="sendFriendRequest()">Send friend request</button>
+           <button id="sendButton" onClick="sendFriendRequest()">Send friend request</button>
        </div>
 
 </div>
+<!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="firebase/firebase.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
